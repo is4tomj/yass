@@ -49,7 +49,7 @@ Make sure that you have [upgraded your firmware](https://developers.yubico.com/y
 yass init --recipient USER-ID [--master-passphrase passphrase]
 ```
 
-Creates a Smart Yass vault in a directory defined `YASSHOME`, which defaults to `$HOME/.yass`.
+Creates a Smart Yass vault in a directory defined by `YASSHOME`, which defaults to `$HOME/.yass`.
 
 ## Open and use vault
 
@@ -57,7 +57,7 @@ Creates a Smart Yass vault in a directory defined `YASSHOME`, which defaults to 
 yass open
 ```
 
-Open the vault in memory and waits to receive CRUD, list, and/or quit commands:
+Opens the Smart Yass vault in memory and waits to receive CRUD, list, and/or quit commands:
 
 ```markdown
 # creates a container with the name, asks for clear and secure payloads
