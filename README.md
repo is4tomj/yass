@@ -13,7 +13,7 @@ Smart Yass only provides meaningful security features to disciplined users that 
 
 ## Relevant Security Advisories
 
-**Security Advisory 2017-10-16**: Be sure that you are not in the class of people that fall into this sad category of [poorly implemented crypto on smart cards](https://www.yubico.com/support/security-advisories/ysa-2017-01/) (including some Yubikeys). One way to avoid this mess altogether is to generate your keys as recommended below (using this [great drduh tutorial](https://github.com/drduh/YubiKey-Guide)).
+**Security Advisory 2017-10-16**: Be sure that you are not in the class of people that fall into this sad category of [poorly implemented crypto on smart cards](https://www.yubico.com/support/security-advisories/ysa-2017-01/) (including some Yubikeys). Avoid this mess by generating your keys using standard implementations like GnuPG (See this [great drduh tutorial](https://github.com/drduh/YubiKey-Guide)).
 
 ## Software Dependencies
 
