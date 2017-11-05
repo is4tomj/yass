@@ -37,7 +37,7 @@ You should configure your Yubikey 4 with "touch for crypto operations", so that 
 
 ### Yubikey NEO
 
-A Yubikey NEO is better than nothing, but if you must use a NEO, then you should be rigorous about removing your NEO from your computer immediately after you perform a crypto operation. Be sure you have [upgraded your firmware](https://developers.yubico.com/ykneo-openpgp/SecurityAdvisory%202015-04-14.html). Unlike Yubikey 4, Yubikey NEO does not have the "touch for crypto operations" feature. Accordingly, you should remove your Yubikey NEO from your computer after you finish each a cyrpto operation.
+A Yubikey NEO is better than nothing, but if you must use a NEO, then you should be rigorous about removing your NEO from your computer immediately after you perform a crypto operation. Unlike Yubikey 4, Yubikey NEO does not have the "touch for crypto operations" feature. Accordingly, you should remove your Yubikey NEO when you are not using it for crypto operations or authentication. Be sure you have [upgraded your firmware](https://developers.yubico.com/ykneo-openpgp/SecurityAdvisory%202015-04-14.html)
 
 
 # Usage
