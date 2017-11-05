@@ -39,7 +39,7 @@ You should configure your Yubikey 4 with "touch for crypto operations", so that 
 
 A Yubikey NEO is better than nothing, but if you must use a NEO, then you should be rigorous about removing your NEO from your computer immediately after you perform a crypto operation. Unlike Yubikey 4, Yubikey NEO does not have the "touch for crypto operations" feature. Accordingly, you should remove your Yubikey NEO when you are not using it for crypto operations or authentication.
 
-Make sure that you have [upgraded your firmware](https://developers.yubico.com/ykneo-openpgp/SecurityAdvisory%202015-04-14.html). Otherwise, you should schedule a nice night out with Magic Johnson to rap about the good ole days, share some wine, and reminisce about how you both found out that you probably shared more than you had intended with total strangers.
+Make sure that you have [upgraded your firmware](https://developers.yubico.com/ykneo-openpgp/SecurityAdvisory%202015-04-14.html). Otherwise, you should see if Magic Johnson, Equifax, or the NSA have any advice about recovering things that you accidentally leaked to total strangers.
 
 # Usage
 
