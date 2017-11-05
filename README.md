@@ -8,7 +8,7 @@ Used correctly, Smart Yass requires each following to retrieve a password from a
 2.  A smart card coupled to the computer (something you have),
 3.  The user to physically interact with the smart card (something you do).
 
-Smart Yass only provides meaningful security features to disciplined users that have followed the instructions and recommendations discussed herein. If you are not using a smart card, then there is little value in using Smart Yass over other password managers. If you are using [weakass passwords](https://en.wikipedia.org/wiki/Password_strength), then – um – I hope you brought your knee pads because you are getting fucked!
+Smart Yass only provides meaningful security features to disciplined users that have followed the instructions and recommendations discussed herein. If you are not using a smart card, then there is little value in using Smart Yass over other password managers. If you are not using [strong passwords](https://ssd.eff.org/en/module/creating-strong-passwords), then – um – I hope you brought your knee pads because you are [getting fucked](https://haveibeenpwned.com/PwnedWebsites)!
 
 ## Relevant Security Advisories
 
