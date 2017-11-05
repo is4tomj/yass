@@ -15,16 +15,16 @@ Smart Yass only provides meaningful security features to disciplined users that 
 
 **Security Advisory 2017-10-16**: Be sure that you are not in the class of people that fall into this sad category of [poorly implemented crypto on smart cards](https://www.yubico.com/support/security-advisories/ysa-2017-01/) (including some Yubikeys). Avoid this mess by generating your keys using standard implementations, like GnuPG. See this [great drduh tutorial](https://github.com/drduh/YubiKey-Guide).
 
-## Software Dependencies
+## Dependencies
 
 -   GnuPG 2 or later,
 -   openssl,
 -   jq,
--   tr.
+-   tr,
+-   public key,
+-   corresponding private key material.
 
-## Minimum Requirements
-
--   Private/public key pair.
+Please do not generate or store your private key material on the same computer as your vault. 
 
 ## Smart Cards
 
