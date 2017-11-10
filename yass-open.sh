@@ -40,6 +40,15 @@ echo ""
 VAULT=$(gpg --passphrase "$PASSPHRASE" --decrypt "$YASSVAULT")
 RECIPIENT=$(echo "$VAULT" | jq '. ["recipient"]')
 
+######################
+# Generate random password of length n
+# usage $(rpass n)
+######################
+
+rpass() {
+    LC_ALL=C tr -dc 'A-Za-z0-9_!@#$%^&*()\-+=' < /dev/urandom | head -c $1 | echo -n
+}
+
 
 ######################
 # Usage vault
