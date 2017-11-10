@@ -1,0 +1,13 @@
+{
+    version: $v,
+    recipient: $r,
+    pk: $pk,
+    containers: {
+        containers: {
+            test1: {
+                "clear-payload": "username",
+                "secure-payload": "password"
+            }
+        }
+    }
+}
