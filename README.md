@@ -3,7 +3,7 @@ Smart Yass: ~~Yubikey~~ Smart Card-based password manager
 
 **Smart Yass is neither used nor endorsed by Yubico. I am neither employed nor affiliated with Yubico.**
 
-Used correctly, Smart Yass requires each following to retrieve a password from a vault (without the necessary private key material ever being on the same computer as the vault):
+Used correctly, Smart Yass requires each of the following to retrieve a password from a vault (without the necessary private key material ever being on the same computer as the vault):
 1.  The Smart Yass vault's master passphrase (something you know),
 2.  A smart card coupled to the computer (something you have),
 3.  The user to physically interact with the smart card (something you do).
