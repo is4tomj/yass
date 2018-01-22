@@ -2,8 +2,8 @@
 
 ### Copyright © 2017 Tom Johnson
 
-# safety net for things going down, and delete x if not in debug
 set -euo pipefail
+#set -euxo pipefail # to debug, uncomment this line, and comment out above line
 
 # Must be executed before any GPG crypto operations using a
 # Smart Card configured to use touch. If not, pinentry may not be displayed.
