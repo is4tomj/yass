@@ -2,8 +2,27 @@
 
 ### Copyright © 2017 Tom Johnson
 
-set -euo pipefail # safety net for things going down, and delete x if not in debug
+set -euo pipefail
+#set -euxo pipefail # to debug, uncomment this line, and comment out above line
 
+KERNELNAME=$(uname -a)
+
+if [[ $KERNELNAME =~ ^Darwin ]];
+then
+    GPG=gpg
+
+    # Darwin needs this, otherwise tr cannot parse /dev/urandom.
+    export LC_ALL=C
+else
+    GPG=gpg2
+fi
+
+if [[ -n $(hash $GPG) ]];
+then
+    echo "Missing or cannot detect ${GPG}"
+    exit 1
+fi
+# need to do this sometimes: gpg-connect-agent updatestartuptty /bye
 
 POSITIONAL=()
 while [[ $# -gt 0 ]]
