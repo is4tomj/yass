@@ -31,7 +31,9 @@ Smart Yass can work with any smart card that holds private key material, support
 
 ### Yubikey 4 (Recommended)
 
-A Yubikey 4 that is loaded with three 4096-bit subkeys for encryption, signing and authentication. The subkeys should be generated from a master private key that has never been on the same computer as the Smart Yass vault, and preferably generated on an air-gapped computer. See this [great drduh tutorial](https://github.com/drduh/YubiKey-Guide) for instructions.
+A Yubikey 4 can be loaded with three 4096-bit subkeys for encryption, signing and authentication. The subkeys should be generated from a master private key that has never been on the same computer as the Smart Yass vault, and preferably generated on an air-gapped computer.
+
+You can use [build-gpg-key-material.sh](./build-gpg-key-material.sh) to generate the master key-pair and subkeys. I will continue to update this over time to standardize the process of creating an encrypted backup and loading subkeys on a Yubikey 4. The script is tested on MacOS and Fedora. See this [great drduh tutorial](https://github.com/drduh/YubiKey-Guide) for instructions.
 
 You should configure your Yubikey 4 with "touch for crypto operations", so that the Yubikey 4 will only perform a cryptographic operation in response to a touch. Although some Yubikey 4 features use a touch mechanism out of the box, this feature is ***not*** enabled out of the box. See Yubico's [tutorial](https://developers.yubico.com/PGP/Card_edit.html#_yubikey_4_touch) (scroll up a little after you select this link because the website UI sucks).
 
