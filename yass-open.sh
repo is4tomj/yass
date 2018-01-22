@@ -4,6 +4,16 @@
 
 set -euo pipefail # safety net for things going down, and delete x if not in debug
 
+### Setup some environment stuff
+
+KERNELNAME=$(uname -a)
+
+if [[ $KERNELNAME =~ ^Darwin ]];
+then
+    # Darwin needs this, otherwise tr cannot parse /dev/urandom.
+    export LC_ALL=C
+fi
+
 underline=`tput smul`
 nounderline=`tput rmul`
 bold=`tput bold`
@@ -46,7 +56,7 @@ RECIPIENT=$(echo "$VAULT" | jq '. ["recipient"]')
 ######################
 
 rpass() {
-    LC_ALL=C tr -dc 'A-Za-z0-9_!@#$%^&*()\-+=' < /dev/urandom | head -c $1 | echo -n
+    tr -dc 'A-Za-z0-9_!@#$%^&*()\-+=' < /dev/urandom | head -c $1 | echo -n
 }
 
 
