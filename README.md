@@ -109,6 +109,10 @@ A Smart Yass vault is a symmetrically encrypted JSON file that is signed with th
 }
 ```
 
+# Resources
+
+- [Unattended key generations](https://www.gnupg.org/documentation/manuals/gnupg/Unattended-GPG-key-generation.html)
+
 # License – MIT
 
 Copyright © 2017 Tom Johnson
