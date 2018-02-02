@@ -188,4 +188,5 @@ echo
 echo "Possibly wanted next steps:"
 echo "  $ GNUPGHOME=${GNUPGHOME}"
 echo '  $ cd ${GNUPGHOME}'
+echo "  $ ${GPG} --homedir . [commands and params]"
 
