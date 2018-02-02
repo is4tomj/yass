@@ -1,9 +1,10 @@
-#!/usr/bin/env bash
+]#!/usr/bin/env bash
 
 ### Copyright © 2018 Tom Johnson
 
 set -euo pipefail
 #set -euxo pipefail # to debug, uncomment this line, and comment out above line
+
 
 
 ######################
@@ -38,6 +39,8 @@ else
     echo "$GPG version ${GPGVERSION} is installed, but need at least version ${REQVERSION}"
     exit 1
 fi
+
+### TODO: check whether yubico-piv-tool is installed
 
 ######################
 # Helpers
@@ -177,6 +180,12 @@ echo
 echo "TODO:"
 echo "  -If needed, create encrypted backup of ${GNUPGHOME} (passphrase, key-pair, subkeys, etc)."
 echo '  -Insert Harware Token ("HT").'
-echo '  -Configure HT and add subkeys using "${GPG} --card-edit".'
+echo "  -Configure HT and add subkeys using: ${GPG} --card-edit."
 echo "  -Secure delete all key material and remaining byproducts at ${GNUPGHOME}."
-echo '  -If needed, delete master private key using "${GPG} --delete-secret-key ${EMAIL}"'
+echo "  -If needed, delete master private key using: ${GPG} --delete-secret-key ${EMAIL}"
+echo
+
+echo "Possibly wanted next steps:"
+echo "  $ GNUPGHOME=${GNUPGHOME}"
+echo '  $ cd ${GNUPGHOME}'
+
